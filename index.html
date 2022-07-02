@@ -46,12 +46,32 @@
     </header> 
         
         <main>
-            <section class="header-block box overiay">
+            <section class="header-block box overliay">
             <div class="container">
                 <h1 class="block">
                 Эффективные решения для вашего бизнеса
             </h1>
-            <button class="header-button" type="button">Заказать услугу</button>
+
+
+            <button data-modal-open="" class="header-button" type="button" >Заказать услугу</button>
+
+
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ex.,
+                    </p>
+                    <button data-modal-close=""><svg class="icon-close" width="18" height="18">
+                        <use href="./imeges/icons.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+
+            </div>
+            
+
+
+
             </div>
         </section> 
         
@@ -122,14 +142,23 @@
                 <li class="about-a">
                     <a href="./imeges/img1.jpg"><img src="./imeges/img1.jpg" alt="клавиатура" width="370"
                             height="294" /></a>
+                    <div class="label">
+                        <h3 class="meta">Десктопные приложения</h3>
+                    </div>        
                 </li>
                 <li class="about-a">
                     <a href="./imeges/img2(1).jpg"><img src="./imeges/img2(1).jpg" alt="планшет" width="370"
                             height="294" /></a>
+                        <div class="label">
+                            <h3 class="meta">Мобильные приложения</h3>
+                        </div>
                 </li>
                 <li class="about-a">
                     <a href="./imeges/img3.jpg"><img src="./imeges/img3.jpg" alt="телефон" width="370"
                             height="294" /></a>
+                        <div class="label">
+                            <h3 class="meta">Дизайнерские решения</h3>
+                        </div>
                 </li>
             </ul>
             </div>
@@ -346,9 +375,8 @@
                 <h2 class="about">Постоянные клиенты</h2>
                 <ul class="client-items">
                     <li class="client">
-                            <a class="client-list" href=""
-                        target="_blank"
-                    rel="noopener noreferrer"
+                            <a class="client-list" href="#"
+                    
                     aria-label="logo">
                     <svg class="client-icon" width="106" height="60">
                         <use href="./imeges/icons.svg#icon-logo"></use>
@@ -356,9 +384,8 @@
                 </a>
                     </li>
                     <li class="client">
-                        <a class="client-list" href=""
-                        target="_blank"
-                    rel="noopener noreferrer"
+                        <a class="client-list" href="#"
+                    
                     aria-label="logo-1">
                     <svg class="client-icon" width="106" height="60">
                         <use href="./imeges/icons.svg#icon-logo-1"></use>
@@ -366,9 +393,8 @@
                     </a>
                     </li>
                     <li class="client">
-                    <a class="client-list" href="" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                    <a class="client-list" href="#" 
+                        
                         aria-label="logo-2">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="./imeges/icons.svg#icon-logo-2"></use>
@@ -376,9 +402,8 @@
                         </a>
                     </li>
                     <li class="client">
-                        <a class="client-list" href="" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                        <a class="client-list" href="#" 
+                        
                         aria-label="logo-3">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="./imeges/icons.svg#icon-logo-3"></use>
@@ -386,9 +411,8 @@
                         </a>
                     </li>
                     <li class="client">
-                        <a class="client-list" href="" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                        <a class="client-list" href="#" 
+                        
                         aria-label="logo-4">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="./imeges/icons.svg#icon-logo-4"></use>
@@ -396,9 +420,8 @@
                         </a>
                     </li>
                     <li class="client">
-                        <a class="client-list" href="" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                        <a class="client-list" href="#" 
+                        
                         aria-label="logo-5">
                             <svg class="client-icon" width="106" height="60">
                                 <use  href="./imeges/icons.svg#icon-logo-5"></use>
@@ -463,6 +486,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
