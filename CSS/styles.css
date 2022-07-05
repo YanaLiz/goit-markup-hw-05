@@ -131,8 +131,11 @@ border-bottom: 1px solid var(--grey);
     height: 581px;
 background-color: var(--white);
 border-radius: 4px;
+transition: transform var(--anim-fast), var(--cubik), 250ms;
 
 }
+
+
 .modal-close-button{
     position: absolute;
     top: 0;
